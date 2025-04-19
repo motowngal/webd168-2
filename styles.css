@@ -1,21 +1,70 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #ffffff;
-  margin: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Centers child horizontally */
+  align-items: center; /* Optional: centers child vertically */
+  height: 500px; /* or whatever size you want */
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the entire area */
+  object-position: center;
+  display: block;
+  margin-top: 50px;
+}
+
+.hero-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 30px 22px 80px;
+  box-sizing: border-box;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-title h1 {
+  margin: 0;
+  font-size: 3em;
+  text-align: left;
+}
+
+.hero-title p {
+  font-size: 1.5em;
+  text-align: left;
 }
 
 .container {
   text-align: center;
+  padding-top: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .card {
   position: relative;
   border-radius: 10px;
   overflow: hidden;
-  width: 400px;
+  width: 500px;
   max-width: 90%;
+  margin: 20px auto;
 }
 
 .background-image {
@@ -26,7 +75,6 @@ body {
 
 .overlay-text {
   position: absolute;
-  top: 20px;
   left: 0;
   right: 0;
   color: white;
@@ -34,19 +82,31 @@ body {
 }
 
 .overlay-text h1 {
-  margin: 0;
-  font-size: 2em;
+  margin: 25px auto;
+  font-size: 2.5em;
 }
 
 .overlay-text p {
-  margin-top: 150px;
+  margin-top: 153px; /* mt */
   font-size: 1.2em;
 }
 
 .chapter-list {
-  list-style-type: disc;
-  text-align: left;
-  margin-top: 20px;
+  list-style-type: none;
+  margin: 20px auto;
   font-size: 1.2em;
-  padding-left: 40px;
+  padding: 0;
+  width: fit-content;
+  text-align: left;
+}
+.chapter-list li {
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.chapter-list a {
+  text-decoration: none;
+  color: #000; /* or any color you like */
+  display: block; /* makes link behave like a block for justification */
+  text-align: justify;
 }
