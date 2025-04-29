@@ -173,12 +173,34 @@
       }
 
       @media (max-width: 768px) {
-        .navbar {
-          justify-content: space-between;
-        }
-
         body {
           font-size: 0.9rem;
+        }
+
+        .navbar {
+          justify-content: center; /* Center content in navbar */
+          position: relative;
+        }
+
+        .hamburger {
+          display: flex;
+          position: absolute;
+          right: 1rem;
+          top: 1rem;
+          flex-direction: column;
+          justify-content: space-around;
+          width: 30px;
+          height: 30px;
+          background: none;
+          border: none;
+          cursor: pointer;
+        }
+
+        .bar {
+          width: 25px;
+          height: 4px;
+          background-color: #fff;
+          border-radius: 2px;
         }
 
         .navbar ul {
@@ -191,6 +213,8 @@
           top: 100%;
           left: 0;
           right: 0;
+          padding: 1rem 0;
+          z-index: 999;
         }
 
         .navbar ul.active {
@@ -203,27 +227,25 @@
 
         .navbar a {
           width: 100%;
+          padding: 0.5rem;
+          color: #fff;
         }
+      }
 
-        .hamburger {
-          display: flex;
-        }
+      .cards {
+        grid-template-columns: 1fr;
+      }
 
-        .cards {
-          grid-template-columns: 1fr;
-        }
+      header h1 {
+        font-size: 2rem;
+      }
 
-        header h1 {
-          font-size: 2rem;
-        }
+      .card-content {
+        padding: 1rem;
+      }
 
-        .card-content {
-          padding: 1rem;
-        }
-
-        .card h2 {
-          font-size: 1.25rem;
-        }
+      .card h2 {
+        font-size: 1.25rem;
       }
     </style>
   </head>
