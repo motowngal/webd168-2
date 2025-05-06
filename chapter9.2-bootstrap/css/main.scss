@@ -67,6 +67,12 @@ h2 {
   color: color(accent);
 }
 
+.img-fluid.rounded {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
 // Padding helpers
 .py-4 {
   padding-top: 1.5rem;
