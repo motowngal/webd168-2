@@ -1,0 +1,23 @@
+caption {
+  caption-side: top;
+}
+
+.table-dark {
+  --bs-table-bg: #183b4e;
+}
+
+.custom-header {
+  background-color: #b3c8d0;
+  color: #183b4e;
+}
+
+.header-text-dark {
+  color: #183b4e;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
