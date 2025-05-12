@@ -1,0 +1,44 @@
+caption {
+  caption-side: top;
+}
+
+.table-dark {
+  --bs-table-bg: #183b4e;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.custom-header {
+  background-color: #b3c8d0;
+  color: #183b4e;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.custom-header img {
+  max-height: 250px;
+  width: auto;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  animation: fadeInRight 1.2s ease-out both;
+  animation-delay: 0.2s;
+}
+
+.header-text-dark {
+  color: #183b4e;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}/*# sourceMappingURL=custom.css.map */
