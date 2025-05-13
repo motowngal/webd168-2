@@ -48,7 +48,7 @@ caption {
 @keyframes flyIn {
   0% {
     opacity: 0;
-    transform: translateY(100px); // starts from below
+    transform: translateY(100px);
   }
   100% {
     opacity: 1;
@@ -59,7 +59,7 @@ caption {
 .fly-in {
   opacity: 0;
   animation: flyIn 2.5s ease-out forwards;
-  animation-delay: 0.3s; // optional: delays it slightly
+  animation-delay: 0.3s;
 }
 
 @media (max-width: 768px) {
