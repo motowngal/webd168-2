@@ -6,16 +6,22 @@ caption {
   --bs-table-bg: #183b4e;
 }
 
-@keyframes fadeInRight {
+@keyframes rotateNote {
   from {
-    opacity: 0;
-    transform: translateX(30px);
+    transform: rotate(0deg);
   }
   to {
-    opacity: 1;
-    transform: translateX(0);
+    transform: rotate(360deg);
   }
 }
+.rotating-note {
+  display: inline-block;
+  transition: transform 0.4s ease-in-out;
+}
+.rotating-note:hover {
+  animation: rotateNote 1s linear infinite;
+}
+
 .custom-header {
   background-color: #b3c8d0;
   color: #183b4e;
@@ -34,6 +40,22 @@ caption {
 
 .header-text-dark {
   color: #183b4e;
+}
+
+@keyframes flyIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fly-in {
+  opacity: 0;
+  animation: flyIn 2.5s ease-out forwards;
+  animation-delay: 0.3s;
 }
 
 @media (max-width: 768px) {
