@@ -1,0 +1,111 @@
+caption {
+  caption-side: top;
+}
+
+.table-dark {
+  --bs-table-bg: #183b4e;
+}
+
+/* css/swivel.css */
+@keyframes swivel {
+  0% {
+    transform: rotateY(0deg);
+  }
+  25% {
+    transform: rotateY(35deg); /* stronger effect */
+  }
+  50% {
+    transform: rotateY(0deg);
+  }
+  75% {
+    transform: rotateY(-35deg); /* stronger effect */
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+.swivel-img {
+  animation: swivel 3s ease-in-out infinite;
+  transform-style: preserve-3d;
+  display: inline-block;
+  max-width: 100%;
+  width: 85%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .swivel-img {
+    width: 30%;
+    max-width: 350px;
+  }
+}
+.custom-header {
+  background-color: #b3c8d0;
+  color: #183b4e;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.custom-header .custom-header img {
+  max-height: 50%;
+  max-width: 50%;
+  width: auto;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.header-text-dark {
+  color: #183b4e;
+}
+
+@keyframes flyIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fly-in {
+  opacity: 0;
+  animation: flyIn 2.5s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+.shrink-60 {
+  width: 40%; /* Shrinks to 40% = 60% smaller */
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; /* centers image */
+}
+
+/* Custom progress bar colors */
+.progress-bar {
+  background-color: #4b4b4b; /* Default: dark gray */
+}
+
+/* Override individual skill levels */
+.progress-bar.expert {
+  background-color: #4b4b4b;
+}
+
+.progress-bar.advanced {
+  background-color: #4b4b4b;
+}
+
+.progress-bar.intermediate {
+  background-color: #4b4b4b;
+}
+
+.progress-bar.beginner {
+  background-color: #4b4b4b;
+}/*# sourceMappingURL=custom.css.map */
